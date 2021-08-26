@@ -91,7 +91,7 @@ sudo systemctl start xinetd
 #create a system file for ztp-dashboard
 system_file="/etc/systemd/system/ztp-dashboard.service"
 
-echo "[Unit]" >> $system_file
+echo "[Unit]" > $system_file
 echo "Description=ZTP-dashboard service" >> $system_file
 echo "[Service]" >> $system_file
 echo "ExecStart=/opt/ztp-go/bin/start-ztp.sh" >> $system_file
@@ -103,7 +103,7 @@ echo "WantedBy=multi-user.target" >> $system_file
 cd /opt/ztp-go/bin
 startup_file="start-ztp.sh"
 
-echo "#!/bin/bash" >> $startup_file
+echo "#!/bin/bash" > $startup_file
 echo "cd /opt/ztp-go" >> $startup_file
 echo ". .env" >> $startup_file
 echo "cd /opt/ztp-go/bin/" >> $startup_file
