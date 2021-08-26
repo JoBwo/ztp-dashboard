@@ -51,8 +51,8 @@ sudo chmod 755 .env
 mkdir src
 mkdir bin
 mkdir pkg
-go get github.com/CiscoSE/ztp-dashboard
-go install github.com/CiscoSE/ztp-dashboard
+go get github.com/JoBwo/ztp-dashboard
+go install github.com/JoBwo/ztp-dashboard
 
 #install isc-dhcp-server
 sudo apt install -y isc-dhcp-server
